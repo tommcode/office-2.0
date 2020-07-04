@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcd5ec4559.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,8 +19,8 @@
                 <img src="./images/logo.svg" alt="" class="logo__image">
             </a>
             <ul class="menu__list">
-                <li class="menu__item"><a href="" class="menu__link">Strona główna</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Oferta</a></li>
+                <li class="menu__item"><a href="#home" class="menu__link">Strona główna</a></li>
+                <li class="menu__item"><a href="#offer" class="menu__link">Oferta</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Projekty</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Kontakt</a></li>
             </ul>
@@ -42,11 +43,28 @@
                    Udzielamy wszelkich informacji dotyczących procesu budowlanego.<br>
                    Zajmujemy się projektami: <span class="home__text home__text--bold">budynków usługowych i handlowych, budynków jedno i wielorodzinnych,
                    sal bankietowych oraz budynków użyteczności publicznej.</span></p>
-                <img src="./images/biuro.jpg" alt="" class="home__image" data-aos='fade-up'>
+                   <div class="home__images">
+                    <div class="home__graph" data-aos='fade-up' data-aos-delay='1000' data-aos-duration='1000'>
+                        <i class="fas fa-history" ></i>
+                        <p>Jesteśmy na rynku <br>już od ponad 15 lat</p>
+                    </div>
+                    <div class="home__graph" data-aos='fade-up' data-aos-delay='1500' data-aos-duration='1000'>
+                        <i class="fas fa-users"></i>
+                        <p>Zaufało nam<br> dziesiątki klientóww</p>
+                    </div>
+                    <div class="home__graph" data-aos='fade-up' data-aos-delay='2000' data-aos-duration='1000'>
+                        <i class="fas fa-tasks"></i>
+                        <p>Wykonaliśmy setki<br> projektów</p>
+                    </div>
+                   </div>
+                <!-- <img src="./images/biuro.jpg" alt="" class="home__image" data-aos='fade-up'> -->
             </div>
         </section>
         <section id="offer" class="offer__page">
-            <h1 class="home__heading">Oferta</h1>
+            <h1 class="offer__heading">Oferta</h1>
+            <div class="offer__container">
+                <p>aaaa</p>
+            </div>
         </section>
         <section id="projects">
 

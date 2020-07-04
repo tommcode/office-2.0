@@ -147,19 +147,10 @@ body {
   background-image: url("../images/background.jpg");
   height: 100vh;
   width: 100%;
-  margin-top: 80px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.home__page .home__heading {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 10px;
-  font-weight: bold;
-  text-shadow: 4px 4px 1px #FFCB3D;
 }
 
 .home__container {
@@ -167,7 +158,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 100px;
   width: 80%;
   background-color: RGBA(0, 0, 0, 0.4);
   padding: 20px;
@@ -185,16 +176,49 @@ body {
   font-weight: bold;
 }
 
-.home__container .home__image {
-  max-width: 30%;
-  max-height: auto;
-  border-radius: 5px;
-  margin-left: 35%;
-  margin-top: 30px;
+.home__container .home__images {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home__container .home__images .home__graph {
+  display: flex;
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home__container .home__images .home__graph i {
+  font-size: 100px;
+  color: black;
+  text-shadow: 4px 4px 1px #f15701;
+}
+
+.home__container .home__images .home__graph p {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
 }
 
 .offer__page {
   height: 100vh;
+}
+
+.offer__page .offer__heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.offer__container {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

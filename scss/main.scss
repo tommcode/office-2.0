@@ -8,11 +8,13 @@ body {
     justify-content: center;
     position: fixed;
     z-index: 9999;
+    
     // margin-bottom: 160px;
     .page__nav {
         width: 80%;
         display: flex;
         justify-content: space-between;
+        
         .logo__image {
             width: auto;
             height: 80px
@@ -130,25 +132,25 @@ body {
     background-image: url('../images/background.jpg');
     height: 100vh;
     width: 100%;
-    margin-top: 80px;;
+    // margin-top: 80px;;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    .home__heading {
-        text-align: center;
-        font-size: 30px;
-        margin-top: 10px;
-        font-weight: bold;
-        text-shadow: 4px 4px 1px #FFCB3D;
-    }
+    // .home__heading {
+    //     text-align: center;
+    //     font-size: 50px;
+    //     margin-top: 10px;
+    //     font-weight: bold;
+    //     text-shadow: 4px 4px 1px #FFCB3D;
+    // }
 }
 .home__container {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 100px;
     width: 80%;
     background-color: RGBA(0,0,0,0.4);
     padding: 20px;
@@ -163,19 +165,47 @@ body {
             font-weight: bold;
         }
     }
-    .home__image {
-        max-width: 30%;
-        max-height: auto;
-        border-radius: 5px;
-        margin-left: 35%;
-        margin-top: 30px;
+    .home__images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .home__graph {
+        display: flex;
+        margin-top: 80px;
+        color: white;
+        text-align: center;
+        margin-bottom: 50px; ;
+        
+    }
+    .home__graph i {
+        font-size: 100px;
+        color: black;
+        text-shadow: 4px 4px 1px #f15701;
+        // f15701
+    }
+    .home__graph p {
+        margin-left: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 30px;
+    }
     }
 }
 
 .offer__page {
    height: 100vh;
+   .offer__heading {
+       font-size: 30px;
+       text-align: center;
+   }
 }
-
+html {
+    scroll-behavior: smooth;
+}
+.offer__container {
+    margin-top: 100px;
+}
 
 
 
