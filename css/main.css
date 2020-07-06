@@ -3,6 +3,11 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+.page {
+  background: #020024;
+  background: linear-gradient(180deg, #020024 0%, #090979 100%);
+}
+
 .page__header {
   width: 100%;
   background-color: black;
@@ -145,7 +150,7 @@ body {
 
 .home__page {
   background-image: url("../images/background.jpg");
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +210,10 @@ body {
 }
 
 .offer__page {
-  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .offer__page .offer__heading {
@@ -219,6 +227,34 @@ html {
 
 .offer__container {
   margin-top: 100px;
+}
+
+.offer__container .offer__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.offer__container .offer__text {
+  font-size: 25px;
+  text-align: center;
+}
+
+.offer__columns {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.offer__list {
+  list-style-type: none;
+}
+
+.offer__list .offer__list-item {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
