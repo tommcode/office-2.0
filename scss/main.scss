@@ -4,8 +4,8 @@ body {
 
 
 .page {
-  background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
+  background: rgb(104,104,107);
+  background: linear-gradient(180deg, rgba(104,104,107,1) 0%, rgba(194,187,187,1) 100%);
 }
 .page__header {
     width: 100%;
@@ -226,12 +226,35 @@ html {
     .offer__text {
       font-size: 25px;
       text-align: center;
+      position: relative;
+      &::before {
+        width:200px;
+        height: 100px;
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        border-top: 10px solid #f15701;
+        border-left: 10px solid #f15701;
+      }
+      &::after {
+        width: 200px;
+        height: 100px;
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        border-bottom: 10px solid #f15701;
+        border-right: 10px solid #f15701;
+    }
     }
 }
 .offer__columns {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .offer__list {
   list-style-type: none;
@@ -241,7 +264,38 @@ html {
   }
 }
 
-
+.offer__content {
+  display: flex;
+  justify-content: space-between;
+  i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .offer__buildings {
+    width: 33%;
+    // text-align: center;
+  }
+  .offer__sport {
+    width: 33%;
+    // text-align: center;
+    
+  }
+  .offer__industrial {
+    width: 33%;
+    // text-align: center;
+  }
+}
+.offer__secondList {
+  line-height: 20px;
+  i {
+    font-size: 20px;
+  }
+}
 
 
 

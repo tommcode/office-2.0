@@ -4,8 +4,8 @@ body {
 }
 
 .page {
-  background: #020024;
-  background: linear-gradient(180deg, #020024 0%, #090979 100%);
+  background: #68686b;
+  background: linear-gradient(180deg, #68686b 0%, #c2bbbb 100%);
 }
 
 .page__header {
@@ -240,12 +240,37 @@ html {
 .offer__container .offer__text {
   font-size: 25px;
   text-align: center;
+  position: relative;
+}
+
+.offer__container .offer__text::before {
+  width: 200px;
+  height: 100px;
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-top: 10px solid #f15701;
+  border-left: 10px solid #f15701;
+}
+
+.offer__container .offer__text::after {
+  width: 200px;
+  height: 100px;
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  border-bottom: 10px solid #f15701;
+  border-right: 10px solid #f15701;
 }
 
 .offer__columns {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .offer__list {
@@ -255,6 +280,42 @@ html {
 .offer__list .offer__list-item {
   font-size: 20px;
   line-height: 30px;
+}
+
+.offer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__content i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.offer__content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offer__content .offer__buildings {
+  width: 33%;
+}
+
+.offer__content .offer__sport {
+  width: 33%;
+}
+
+.offer__content .offer__industrial {
+  width: 33%;
+}
+
+.offer__secondList {
+  line-height: 20px;
+}
+
+.offer__secondList i {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
