@@ -222,6 +222,18 @@ html {
     color: white;
     text-align: center;
     margin-bottom: 30px;
+    color: #ECECF6;
+   text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+    }
+    .offer__title--3d {
+     
+      font-size: 40px;
+      color: #CCCCCC;
+      text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+      0 3px 0 #777777, 0 4px 0 #666666,
+      0 5px 0 #555555, 0 6px 0 #444444,
+      0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+      0 9px 10px rgba(0, 0, 0, 0.2);
     }
     .offer__text {
       font-size: 25px;
@@ -267,6 +279,7 @@ html {
 .offer__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   i {
     font-size: 40px;
     margin-bottom: 10px;
@@ -276,27 +289,52 @@ html {
     font-size: 20px;
     font-weight: bold;
   }
-  .offer__buildings {
-    width: 33%;
-    // text-align: center;
-  }
-  .offer__sport {
-    width: 33%;
-    // text-align: center;
+  // .offer__buildings {
+  //   width: 33%;
+  //   // text-align: center;
+  // }
+  // .offer__sport {
+  //   min-width: 33%;
+  //   // text-align: center;
     
-  }
-  .offer__industrial {
-    width: 33%;
-    // text-align: center;
-  }
+  // }
+  // .offer__industrial {
+  //   min-width: 33%;
+  //   // text-align: center;
+  // }
 }
 .offer__secondList {
   line-height: 20px;
   i {
     font-size: 20px;
   }
+  li:first-of-type {
+    margin-top: 10px;
+  }
 }
-
+.offer__items {
+  width: 33%;
+  margin-top: 20px;
+}
+.offer__additional {
+  font-size: 25px;
+  font-weight: bold;
+}
+.projects__container {
+  margin-top: 100px;
+  .project__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #CCCCCC;
+    text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+           0 3px 0 #777777, 0 4px 0 #666666,
+           0 5px 0 #555555, 0 6px 0 #444444,
+           0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+           0 9px 10px rgba(0, 0, 0, 0.2);
+  }
+}
 
 
 
