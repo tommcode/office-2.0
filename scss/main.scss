@@ -320,6 +320,11 @@ html {
   font-size: 25px;
   font-weight: bold;
 }
+
+.projects__page {
+  width: 80%;
+    
+}
 .projects__container {
   margin-top: 100px;
   .project__title {
@@ -335,7 +340,55 @@ html {
            0 9px 10px rgba(0, 0, 0, 0.2);
   }
 }
+.projects__photos {
+    display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+		// align-items: center;
+  
+  .projects__photo {
+    // margin-right: 50px;
+    position: relative;
+    max-width: 33%;
+    border: 2px solid #f15701;
+		height: 200px;
+    min-width: 300px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+      &:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+      }
+  }
+  .projects__img {
+    height: 200px;
+    width: 300px;
+    // margin-left: 30px;
+    
+  }
+}
 
+.project__text { 
+  display:block;
+  position:absolute;
+  top: 50%;
+  text-align:center;
+  z-index:10000;
+  font-weight: bold;
+  margin: 0 auto;
+  width:100%;
+  color: #D0F8FF;
+   text-shadow: 0 0 5px #f15701, 0 0 10px #f15701,
+           0 0 20px #f15701, 0 0 30px #f15701,
+           0 0 40px #f15701;
+ }
 
 
 @import url("./../css/reset.css")
