@@ -330,15 +330,50 @@ html {
 }
 
 .projects__page {
-  width: 80%;
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  position: relative;
+  z-index: 99999;
+}
+
+.projects__page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: white;
+  -webkit-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg);
+  z-index: -1;
+}
+
+.projects__page:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: white;
+  -webkit-transform: skew(0deg, -6deg);
+  transform: skew(0deg, -6deg);
+  z-index: -1;
 }
 
 .projects__container {
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 80%;
 }
 
 .projects__container .project__title {
   font-size: 40px;
+  margin-top: 50px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
