@@ -274,6 +274,10 @@ html {
   border-right: 10px solid #f15701;
 }
 
+.offer__title--center {
+  margin-top: 40px;
+}
+
 .offer__columns {
   display: flex;
   flex-wrap: wrap;
@@ -326,13 +330,13 @@ html {
 }
 
 .offer__additional {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .projects__page {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   background: white;
   position: relative;
   z-index: 9998;
@@ -378,7 +382,7 @@ html {
   margin-top: 50px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   color: #CCCCCC;
   text-shadow: 0 1px 0 #999999, 0 2px 0 #888888, 0 3px 0 #777777, 0 4px 0 #666666, 0 5px 0 #555555, 0 6px 0 #444444, 0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4), 0 9px 10px rgba(0, 0, 0, 0.2);
 }
@@ -399,27 +403,23 @@ html {
   transition: all 0.5s ease;
 }
 
-.projects__photos .projects__photo:hover {
-  -webkit-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-}
-
 .projects__photos .projects__img {
   height: 200px;
-  width: 300px;
+  min-width: 300px;
+}
+
+.projects__photos .projects__img:hover {
+  opacity: 0.5;
+  transition: ease 1s;
 }
 
 .project__text {
   display: block;
-  position: absolute;
-  top: 50%;
+  margin-top: 20px;
+  font-size: 18px;
   text-align: center;
-  z-index: 10000;
   font-weight: bold;
-  margin: 0 auto;
-  width: 100%;
-  color: #D0F8FF;
-  text-shadow: 0 0 5px #f15701, 0 0 10px #f15701, 0 0 20px #f15701, 0 0 30px #f15701, 0 0 40px #f15701;
+  color: gray;
 }
 
 .contact__page {
@@ -468,6 +468,15 @@ html {
 .contact_frame {
   border: 2px solid #000000;
   max-width: 650px;
+}
+
+@media (max-width: 720px) {
+  .contact__frame {
+    max-width: 50%;
+  }
+  .contact__frame iFrame {
+    max-width: 400px;
+  }
 }
 
 #contact-form {
@@ -630,6 +639,28 @@ label.contact-label {
 
 input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, input[type="button"].contact-btn-block {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+
+.footer .footer__container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  width: 80%;
+  align-items: center;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.footer .footer__list a {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
