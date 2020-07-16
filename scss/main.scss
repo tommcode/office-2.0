@@ -4,8 +4,9 @@ body {
 
 
 .page {
-  background: rgb(104,104,107);
-  background: linear-gradient(180deg, rgba(104,104,107,1) 0%, rgba(194,187,187,1) 100%);
+  background-color: #b6b0b0;
+  // background: rgb(104,104,107);
+  // background: linear-gradient(180deg, rgba(104,104,107,1) 0%, rgba(194,187,187,1) 100%);
 }
 .page__header {
     width: 100%;
@@ -317,12 +318,18 @@ html {
   }
 }
 .offer__items {
-  width: 33%;
+  width: 30%;
   margin-top: 20px;
+  // background: rgb(155, 153, 150);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px black dashed;
+  // opacity: 0.5;
 }
 .offer__additional {
   font-size: 20px;
   font-weight: bold;
+  
 }
 
 .projects__page {
@@ -421,7 +428,9 @@ html {
   font-weight: bold;
   // margin: 0 auto;
   // width:100%;
+  // color: gray;
   color: gray;
+   text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
     // text-shadow: 0 1px 0 #999999, 0 1px 0 #888888,
     //        0 2px 0 #777777, 0 2px 0 #666666,
     //        0 3px 0 #555555, 0 3px 0 #444444,
@@ -500,6 +509,7 @@ font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: #212529;
   text-align: left;
   // background-color: #fff;

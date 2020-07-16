@@ -4,8 +4,7 @@ body {
 }
 
 .page {
-  background: #68686b;
-  background: linear-gradient(180deg, #68686b 0%, #c2bbbb 100%);
+  background-color: #b6b0b0;
 }
 
 .page__header {
@@ -325,8 +324,11 @@ html {
 }
 
 .offer__items {
-  width: 33%;
+  width: 30%;
   margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px black dashed;
 }
 
 .offer__additional {
@@ -420,6 +422,7 @@ html {
   text-align: center;
   font-weight: bold;
   color: gray;
+  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
 }
 
 .contact__page {
@@ -490,6 +493,7 @@ html {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: #212529;
   text-align: left;
   padding: 30px;
