@@ -217,6 +217,7 @@ html {
 }
 .offer__container {
     margin-top: 100px;
+    padding-bottom: 20px;
     
     .offer__title {
     font-size: 30px;
@@ -680,9 +681,15 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   align-items: center;
   line-height: 25px;
     font-size: 20px ;
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+  }
   }
   .footer__list a {
-    color: white
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
   }
 }
 

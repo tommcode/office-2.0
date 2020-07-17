@@ -227,6 +227,7 @@ html {
 
 .offer__container {
   margin-top: 100px;
+  padding-bottom: 20px;
 }
 
 .offer__container .offer__title {
@@ -663,8 +664,15 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   font-size: 20px;
 }
 
+.footer .footer__container .footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer .footer__list a {
   color: white;
+  font-size: 18px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
