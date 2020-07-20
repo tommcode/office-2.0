@@ -675,4 +675,8 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   margin-right: 15px;
 }
 
+.footer .footer__list a:hover {
+  color: #f15701;
+}
+
 /*# sourceMappingURL=main.css.map */
