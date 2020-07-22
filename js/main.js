@@ -19,7 +19,8 @@ for (let i = 0; i < home.length; i++) {
         list.classList.toggle('show')
     });
 }
-
+let x = screen.width
+console.log(x)
 AOS.init({
     duration: 3000,
 }); 

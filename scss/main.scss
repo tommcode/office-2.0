@@ -161,14 +161,14 @@ body {
       justify-content: flex-start;
       align-items: center;
       box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
-      transition: 1.5s;
+      transition: 1s;
 
     }
   }
   .show {
     top:0;
     z-index: 99;
-    transition: 1.5s;
+    transition: 1s;
   }
 //HOMEE
 .wrapper {
@@ -438,6 +438,7 @@ html {
   
   .projects__photo {
     // margin-right: 50px;
+    // overflow: hidden;
     position: relative;
     max-width: 33%;
     border: 2px solid #f15701;
@@ -452,7 +453,8 @@ html {
   }
   .projects__img {
     height: 200px;
-    min-width: 300px;
+    overflow: hidden;
+    max-width: 300px;
     // margin-left: 30px;
     &:hover {
       opacity: 0.5;
@@ -463,6 +465,7 @@ html {
 
 .project__text { 
   display:block;
+  z-index: 9999;
   // position:absolute;
   // top: 50%;
   margin-top: 20px;
@@ -522,7 +525,7 @@ font-size: 22px;
            0 9px 10px rgba(0, 0, 0, 0.2);
     
 }
-
+body, html { overflow-x:hidden; }
 .contact__info--bold {
   font-size: 25px;
   font-weight: bold;
@@ -740,7 +743,59 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
 
 }
 
-
+@media(max-width: 450px) {
+  .home__container {
+    // margin-top: 10px;
+    .home__images {
+      display: flex;
+      flex-direction: column;
+      .home__graph {
+        display: flex;
+        margin-top: 10px;
+        color: white;
+        text-align: center;
+        // margin-bottom: 50px; ;
+        
+  }
+    }
+    .home__text {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+  }
+  .offer__text {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+  .offer__items {
+    width: 100%;
+  }
+  .projects__container {
+    .project__title {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+  .projects__photos {
+    display: flex;
+		justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    .projects__photo {
+      margin-top: 90px;
+    }
+  }
+}
 
 
 @import url("./../css/reset.css")
