@@ -510,6 +510,9 @@ body, html {
 
 .iFrame {
   max-width: 650px;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .contact_frame {
@@ -766,6 +769,17 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   }
   .projects__photos .projects__photo {
     margin-top: 90px;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__container p {
+    font-size: 18px;
   }
 }
 
