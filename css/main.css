@@ -781,6 +781,49 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   .footer__container p {
     font-size: 18px;
   }
+  .projects__container .project__title {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .projects__photos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__photos .projects__photo {
+    margin-top: 90px;
+  }
+  .offer__items {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .offer__items {
+    width: 100%;
+  }
+  .projects__photos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__photos .projects__photo {
+    margin-top: 90px;
+  }
+  .offer__columns {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1240px) {
+  .offer__columns {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
