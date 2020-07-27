@@ -850,9 +850,26 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   }
 }
 @media (max-width: 1240px) {
+  .home__container {
+    margin-bottom: 20px;
+  }
   .offer__columns {
     align-items: center;
     justify-content: center;
   }
+}
+@media(max-width: 1290px) {
+  .home__container {
+    display: flex;
+    .home__images {
+      flex-direction: column;
+      align-items: center;
+      .home__graph {
+        margin-top: 20px;
+      }
+    }
+    
+  }
+  
 }
 @import url("./../css/reset.css")
