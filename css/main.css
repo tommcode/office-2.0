@@ -379,7 +379,6 @@ html {
   padding-bottom: 150px;
   background: white;
   position: relative;
-  z-index: 9998;
 }
 
 .projects__page:before {
@@ -446,7 +445,7 @@ html {
 .projects__photos .projects__img {
   height: 200px;
   overflow: hidden;
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .projects__photos .projects__img:hover {
@@ -840,6 +839,19 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   .home__container .home__images .home__graph {
     margin-top: 20px;
   }
+}
+
+#lightgallery {
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#lightgallery img {
+  width: 300px;
+  height: auto;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,18 @@ console.log(x)
 AOS.init({
     duration: 3000,
 }); 
-
+lightGallery(document.getElementById('relative-caption'), {
+    subHtmlSelectorRelative: true
+}); 
+const photoButton = document.querySelector('.photo__button')
+const photoModal = document.querySelector('.photo__modal')
+const closeModal = document.querySelector('.close__modal')
+photoButton.addEventListener('click', () =>{
+    photoModal.style.display = "inline-block"
+})
+closeModal.addEventListener('click', () => {
+    photoModal.style.display = "none"
+})
 
 });
 

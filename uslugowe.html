@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcd5ec4559.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body class="page">
+    <header class="page__header">
+        <nav class="page__nav">
+            <a href="./index.html" class="menu__logo">
+                <img src="./images/logo.svg" alt="" class="logo__image">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#home" class="menu__link">Strona główna</a></li>
+                <li class="menu__item"><a href="#offer" class="menu__link">Oferta</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger__container" tabindex="-1">
+                  <span class="hamburger__bars"></span>
+                </span>
+            </button>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div id="lightgallery">
+            <a href="./images/uslugowe/1.jpg">
+              <img src="./images/uslugowe/1.jpg" />
+            </a>
+            <a href="./images/uslugowe/2.jpg">
+              <img src="./images/uslugowe/2.jpg" />
+            </a>
+            <a href="./images/uslugowe/3.jpg">
+                <img src="images/uslugowe/3.jpg" />
+              </a>
+              <a href="./images/uslugowe/4.png">
+                <img src="./images/uslugowe/4.png" />
+              </a>
+              <a href="./images/uslugowe/5.png">
+                <img src="./images/uslugowe/5.png" />
+              </a>
+          </div>
+    </main>
+    <script src="js/lightgallery.min.js"></script>
+    <script type="text/javascript">
+            lightGallery(document.getElementById('lightgallery')); 
+     </script>
+</body>
+</html>
