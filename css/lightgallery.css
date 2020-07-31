@@ -50,15 +50,24 @@
 }
 
 .lg-actions .lg-next:before {
-  content: "\e095";
+  content: "→";
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .lg-actions .lg-prev {
   left: 20px;
 }
+.lg-toolbar .lg-download:after{
+  content:"⤓"
+}
 
 .lg-actions .lg-prev:after {
-  content: "\e094";
+  content: "←";
+  color: orange;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 @-webkit-keyframes lg-right-end {
@@ -205,12 +214,10 @@
 }
 
 .lg-toolbar .lg-close:after {
-  content: "\e070";
+  content: "✕";
 }
 
-.lg-toolbar .lg-download:after {
-  content: "\e0f2";
-}
+
 
 .lg-sub-html {
   background-color: rgba(0, 0, 0, 0.45);

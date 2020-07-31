@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     
     // margin-bottom: 160px;
     .page__nav {
@@ -200,7 +200,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 130px;
     width: 80%;
     background-color: RGBA(0,0,0,0.4);
     padding: 20px;
@@ -870,15 +870,43 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
     }
   }
 }
-#lightgallery {
+#relative-caption {
   margin-top: 100px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  z-index: 100;
+  margin-bottom: 40px;
   img {
     width: 300px;
     height: auto;
     margin: 5px;
+    border: 1px solid black;
+    &:hover {
+      opacity: 0.5;
+      &::after {
+        content: 'aaaaa';
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+.menu__dropdown {
+  display: none;
+  
+}
+.menu__drop {
+  &:hover {
+    .menu__dropdown {
+      display: block;
+    }
   }
 }
 
