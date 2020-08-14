@@ -862,23 +862,4 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
   opacity: 0.5;
 }
 
-#relative-caption img:hover::after {
-  content: 'aaaaa';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-
-.menu__dropdown {
-  display: none;
-}
-
-.menu__drop:hover .menu__dropdown {
-  display: block;
-}
-
 /*# sourceMappingURL=main.css.map */

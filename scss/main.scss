@@ -885,29 +885,9 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
     border: 1px solid black;
     &:hover {
       opacity: 0.5;
-      &::after {
-        content: 'aaaaa';
-        display: block;
-        position: absolute;
-        top:0;
-        right: 0;
-        width: 10px;
-        height: 10px;
-        background-color: #fff;
-      }
     }
   }
 }
-.menu__dropdown {
-  display: none;
-  
-}
-.menu__drop {
-  &:hover {
-    .menu__dropdown {
-      display: block;
-    }
-  }
-}
+
 
 @import url("./../css/reset.css")
