@@ -1,7 +1,54 @@
+<style type="text/css">
+
+.container {
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 130px;
+    width: 80%;
+    background-color: RGBA(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+body {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    margin: 0 auto;
+    padding: 15px;
+    display: inherit;
+    background: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1
+}
+</style>
+
 <?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "tomaszgr95@interia.pl";
     $email_subject = "Nowa wiadomość";
 
@@ -14,7 +61,7 @@ if (isset($_POST['Email'])) {
         die();
     }
 
-    // validation expected data exists
+
     if (
         !isset($_POST['Name']) ||
         !isset($_POST['Email']) ||
@@ -23,9 +70,9 @@ if (isset($_POST['Email'])) {
         problem('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
-    $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
-    $message = $_POST['Message']; // required
+    $name = $_POST['Name'];
+    $email = $_POST['Email'];
+    $message = $_POST['Message'];
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -48,7 +95,7 @@ if (isset($_POST['Email'])) {
         problem($error_message);
     }
 
-    $email_message = "Form details below.\n\n";
+    $email_message = "Szczegóły wiadomości poniżej\n\n";
 
     function clean_string($string)
     {
@@ -56,20 +103,22 @@ if (isset($_POST['Email'])) {
         return str_replace($bad, "", $string);
     }
 
-    $email_message .= "Name: " . clean_string($name) . "\n";
+    $email_message .= "Imię: " . clean_string($name) . "\n";
     $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
+    $email_message .= "Wiadomość: " . clean_string($message) . "\n";
 
-    // create email headers
+
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <!-- include your success message below -->
 
-Dziękujemy za wysłanie wiadomości!
+<div class='container'>
+    <p>Dziękujemy za wiadomość, postaramy się odpowiedzieć jak najszybciej.</p>
+    <button><a href='./index.html'>Powrót do strony głównej</a></button>
+</div>
 <?php
 }
 ?>

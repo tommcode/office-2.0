@@ -161,12 +161,15 @@ body {
     left: 0;
     width: 100%;
     background: black;
-    height: 300px;
+    height: 50vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
     transition: 1s;
+  }
+  .menu__list .menu__item {
+    padding: 30px;
   }
 }
 
@@ -291,6 +294,7 @@ html {
 
 .offer__container .offer__text {
   font-size: 25px;
+  line-height: 30px;
   text-align: center;
   position: relative;
 }
@@ -745,18 +749,15 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
     text-align: center;
   }
   .home__container .home__text {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
   }
   .offer__text {
     margin-top: 40px;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 25px;
   }
   .offer__content {
     display: flex;
-    flex-direction: column;
     width: 100%;
   }
   .offer__content p {
@@ -862,7 +863,7 @@ input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, i
 
 #relative-caption img {
   width: 300px;
-  height: auto;
+  height: 180px;
   margin: 5px;
   border: 1px solid black;
 }
