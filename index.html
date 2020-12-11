@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biuro projektowe PAGO z siedzibą w Lidzbarku przy ulicy Zieluńskiej 42B świadczy usługi inwestorom już od ponad 15 lat. Projekty, inwentaryzacje, eskpertyzy techniczne, doradztwo. Lidzbark, Działdowo">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Biuro projektowe PAGO</title>
     <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons//favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons//site.webmanifest">
+    <link rel="mask-icon" href="./images/favicons//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#090a0a">
+    <meta name="theme-color" content="#0a0909">
 
 
 </head>
@@ -32,7 +41,6 @@
     </header>
     <main class="wrapper">
         <section id="home" class="home__page">
-            <!-- <h1 class="home__heading">Biuro projektowe Pago</h1> -->
             <div class="home__container">
                 <p class="home__text" data-aos='fade-right'>Biuro projektowe PAGO powstało w 2004 roku. Zajmujemy się projektowaniem
                     w pełnym zakresie. Współpracujemy z inżynierami ze wszystkich branż.
@@ -56,11 +64,11 @@
                         <p>Wykonaliśmy setki<br> projektów</p>
                     </div>
                    </div>
-                <!-- <img src="./images/biuro.jpg" alt="" class="home__image" data-aos='fade-up'> -->
+
             </div>
         </section>
         <section id="offer" class="offer__page" data-aos='fade-right'>
-            <!-- <h1 class="offer__heading">Oferta</h1> -->
+
             <div class="offer__container">
                 <h2 class="offer__title offer__title--3d" >Oferta</h2>
                 <p class="offer__text" >Prowadzimy prace zarówno przy obiektach nowoprojektowanych
@@ -193,9 +201,9 @@
                         E-mail: <a href="mailto:pago.projekty.op.pl" class="contact__info contact__info--normal">pago.projekty@op.pl</a>
                         <br>
                     </address>
-                <!-- <div class="contact_frame"> -->
+
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.954334383894!2d19.818804878694895!3d53.25451846897634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471d06882fcfbfb9%3A0xc7af66e2cece46fa!2sZielu%C5%84ska%2042b%2C%2013-230%20Lidzbark!5e0!3m2!1spl!2spl!4v1569935467636!5m2!1spl!2spl" width="600" height="auto" frameborder="0" style="border:0;" allowfullscreen="" class="iFrame"></iframe>
-                <!-- </div> -->
+
                 </div>
                 <div class="contact-body">
 
@@ -224,9 +232,14 @@
                                 <textarea id="Message" name="Message" class="contact-form-control" rows="6" maxlength="3000" required></textarea>
                             </div>
                         </div>
-
                         <div class="contact-form-group">
-                            <button type="submit" id="contact-button" class="contact-btn contact-btn-primary contact-btn-lg contact-btn-block">Wyślij wiadomość</button>
+                            <label>
+                              <input type="checkbox" id="checkMe">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Biuro Projektowe PAGO z siedzibą w Lidzbarku przy ulicy Zieluńskiej 42B.
+                              </label>
+                        </div>
+                        <div class="contact-form-group">
+                            <button type="submit" id="contact-button" class="contact-btn contact-btn-primary contact-btn-lg contact-btn-block" disabled="false">Wyślij wiadomość</button>
                         </div>
                     </form>
                     </div>
@@ -249,5 +262,6 @@
     <script src="https://kit.fontawesome.com/fcd5ec4559.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
 </body>
 </html>

@@ -41,9 +41,11 @@ for (let i = 0; i < home.length; i++) {
 AOS.init({
     duration: 3000,
 });
+
 // lightGallery(document.getElementById('relative-caption'), {
 //     subHtmlSelectorRelative: true
 // });
+
 const photoButton = document.querySelector('.photo__button')
 const photoModal = document.querySelector('.photo__modal')
 const closeModal = document.querySelector('.close__modal')
@@ -57,6 +59,13 @@ if(closeModal) {
         photoModal.style.display = "none"
     })
 }
+
+const checker = document.getElementById('checkMe');
+const sendbtn = document.getElementById('contact-button');
+checker.onchange = function() {
+  sendbtn.disabled = !sendbtn.disabled
+};
+
 
 
 });
