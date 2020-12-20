@@ -117,7 +117,7 @@ if (isset($_POST['Email'])) {
 
 <div class='container'>
     <p>Dziękujemy za wiadomość, postaramy się odpowiedzieć jak najszybciej.</p>
-    <button><a href='./index.html'>Powrót do strony głównej</a></button>
+    <button><a href='./index'>Powrót do strony głównej</a></button>
 </div>
 <?php
 }
